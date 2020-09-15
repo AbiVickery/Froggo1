@@ -1,0 +1,10 @@
+from tkinter import *
+window = Tk()
+window.title('Froggo')
+c = Canvas(window, height=300, width=400)
+c.pack()
+body = c.create_oval(100, 150, 300, 250, fill='purple')
+eye = c.create_oval(170, 70, 230, 130, fill='white')
+eyeball = c.create_oval(190, 90, 210, 110, fill='black')
+mouth = c.create_oval(150, 220, 250, 240, fill='red')
+neck = c.create_line(200, 150, 200, 130)
